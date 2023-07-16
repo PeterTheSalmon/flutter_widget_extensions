@@ -1,0 +1,55 @@
+include: package:austerity/analysis_options.yaml
+
+linter:
+
+analyzer:
+  exclude:
+    - "**.g.dart"
+    - "lib/firebase_options.dart"
+    - "**.freezed.dart"
+    - "**.gr.dart"
+  plugins:
+    - custom_lint
+  errors:
+    directives_ordering: info
+    always_use_package_imports: info
+    unused_import: info
+    file_names: ignore
+    unused_element: warning
+    avoid_catches_without_on_clauses: ignore
+    lines_longer_than_80_chars: warning
+    prefer_mixin: ignore
+    diagnostic_describe_all_properties: ignore
+    discarded_futures: ignore
+    avoid_classes_with_only_static_members: ignore
+    no_default_cases: ignore
+    library_private_types_in_public_api: ignore
+    public_member_api_docs: info
+    eol_at_end_of_file: info
+    unused_local_variable: info
+    require_trailing_commas: info
+    unused_field: info
+    prefer_const_constructors: info
+    dead_code: warning
+    unawaited_futures: warning
+    prefer_expression_function_bodies: ignore
+    prefer_const_literals_to_create_immutables: info
+
+
+# analyzer:s
+#   plugins:
+#     - custom_lint
+#   exclude:
+#     - "**.g.dart"
+#     - "lib/firebase_options.dart"
+
+# Refer to https://dart-lang.github.io/linter/lints/options/options.html for all rules
+# linter:
+#   rules:
+#     file_names: false
+#     prefer_single_quotes: true
+#     sort_unnamed_constructors_first: false
+#     avoid_classes_with_only_static_members: false
+#     no_leading_underscores_for_local_identifiers: true
+#     no_leading_underscores_for_library_prefixes: true
+#     use_super_parameters: true

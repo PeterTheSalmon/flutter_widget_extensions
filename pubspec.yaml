@@ -1,0 +1,21 @@
+name: widget_extensions
+description: SwiftUI-style methods to make widget styling easier and more readable.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  austerity: ^1.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  custom_lint:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
