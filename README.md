@@ -1,6 +1,16 @@
 # Widget Extensions
 Enables you to style widgets with extension methods. 
 
+## Example
+```dart
+Widget build() {
+    return Text('Extensions!')
+        .padding(all: 10)
+        .decorated(color: Colors.red)
+        .clipRRect(borderRadius: 10);
+}
+```
+
 ## Widget Coverage
 
 ### Complete
