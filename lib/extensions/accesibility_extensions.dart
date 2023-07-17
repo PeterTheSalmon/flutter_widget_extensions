@@ -1,8 +1,50 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
-import 'package:flutter/widgets.dart';
 
 /// Extensions for accesibility
 extension AccesibilityExtensions on Widget {
+  Widget tooltip({
+    Key? key,
+    String? message,
+    bool preferBelow = true,
+    bool excludeFromSemantics = false,
+    EdgeInsetsGeometry? padding,
+    Decoration? decoration,
+    TextStyle? textStyle,
+    double? height,
+    EdgeInsetsGeometry? margin,
+    Duration? waitDuration,
+    Duration? showDuration,
+    bool? preferBelowForTab,
+    double? verticalOffset,
+    bool? enableFeedback,
+    VoidCallback? onTriggered,
+    TextAlign? textAlign,
+    TooltipTriggerMode? triggerMode,
+    InlineSpan? richMessage,
+  }) {
+    return Tooltip(
+      message: 'Tooltip',
+      key: key,
+      preferBelow: preferBelow,
+      excludeFromSemantics: excludeFromSemantics,
+      padding: padding,
+      decoration: decoration,
+      textStyle: textStyle,
+      height: height,
+      margin: margin,
+      waitDuration: waitDuration,
+      showDuration: showDuration,
+      verticalOffset: verticalOffset,
+      enableFeedback: enableFeedback,
+      onTriggered: onTriggered,
+      richMessage: richMessage,
+      textAlign: textAlign,
+      triggerMode: triggerMode,
+      child: this,
+    );
+  }
+
   /// Merges the semantics of its descendants.
   ///
   /// Causes all the semantics of the subtree rooted at this node to be

@@ -166,6 +166,4 @@ extension PaintingAndEffectsExtensions on Widget {
       child: this,
     );
   }
-
-
 }
