@@ -248,8 +248,8 @@ extension LayoutExtensions on Widget {
 
   /// A box with a specified size.
   Widget sized({
-    required double width,
-    required double height,
+    double? width,
+    double? height,
     Key? key,
   }) {
     return SizedBox(
