@@ -3,6 +3,7 @@ import 'package:flutter/semantics.dart';
 
 /// Extensions for accesibility
 extension AccesibilityExtensions on Widget {
+  /// A widget that provides a textual description of the widget's purpose.
   Widget tooltip({
     Key? key,
     String? message,
