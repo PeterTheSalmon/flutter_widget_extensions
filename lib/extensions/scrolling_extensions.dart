@@ -7,12 +7,11 @@ extension ScrollingExtensions on Widget {
   Widget notificationListener<T extends Notification>({
     required NotificationListenerCallback<T>? onNotification,
     Key? key,
-    Widget? child,
   }) {
     return NotificationListener<T>(
       key: key,
       onNotification: onNotification,
-      child: child ?? this,
+      child: this,
     );
   }
 

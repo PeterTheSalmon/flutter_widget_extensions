@@ -301,6 +301,82 @@ extension LayoutExtensions on Widget {
     );
   }
 
+  /// Rotate around the center. Angle is in clockwise radians.
+  Widget transformedRotate({
+    required double angle,
+    Offset? origin,
+    AlignmentGeometry alignment = Alignment.center,
+    bool transformHitTests = true,
+    FilterQuality filterQuality = FilterQuality.low,
+    Key? key,
+  }) {
+    return Transform.rotate(
+      key: key,
+      angle: angle,
+      origin: origin,
+      alignment: alignment,
+      transformHitTests: transformHitTests,
+      filterQuality: filterQuality,
+      child: this,
+    );
+  }
+
+  /// Scales it's child along the 2D pane
+  Widget transformedScale({
+    required double scale,
+    Offset? origin,
+    AlignmentGeometry alignment = Alignment.center,
+    bool transformHitTests = true,
+    FilterQuality filterQuality = FilterQuality.low,
+    Key? key,
+  }) {
+    return Transform.scale(
+      key: key,
+      scale: scale,
+      origin: origin,
+      alignment: alignment,
+      transformHitTests: transformHitTests,
+      filterQuality: filterQuality,
+      child: this,
+    );
+  }
+
+  /// Translates the child's position. Offset is in logical pixels.
+  Widget transformedTranslate({
+    required Offset offset,
+    bool transformHitTests = true,
+    FilterQuality filterQuality = FilterQuality.low,
+    Key? key,
+  }) {
+    return Transform.translate(
+      key: key,
+      offset: offset,
+      transformHitTests: transformHitTests,
+      filterQuality: filterQuality,
+      child: this,
+    );
+  }
+
+  /// Flips the child along the horizontal and/or vertical axes.
+  Widget transformedFlip({
+    bool flipX = false,
+    bool flipY = false,
+    Offset? origin,
+    bool transformHitTests = true,
+    FilterQuality filterQuality = FilterQuality.low,
+    Key? key,
+  }) {
+    return Transform.flip(
+      key: key,
+      filterQuality: filterQuality,
+      transformHitTests: transformHitTests,
+      flipX: flipX,
+      flipY: flipY,
+      origin: origin,
+      child: this,
+    );
+  }
+
   /// Centers the widget.
   /// If a size factor is non-null then the corresponding dimension of this
   /// widget will be the product of the child's dimension and the size factor.
