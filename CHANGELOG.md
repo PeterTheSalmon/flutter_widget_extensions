@@ -1,3 +1,9 @@
+# 0.0.4
+
+- Remove deprecated members
+- Specify supported platforms in `pubspec.yaml`.
+- Add `keyBuilder` extension
+
 ## 0.0.3
 
 - Remove `child` parameter from the `notificationListener` extension.

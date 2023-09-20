@@ -10,12 +10,10 @@ extension InteractionExtensions on Widget {
   Widget absorbPointer({
     Key? key,
     bool absorbing = true,
-    bool? ignoringSemantics,
   }) {
     return AbsorbPointer(
       key: key,
       absorbing: absorbing,
-      ignoringSemantics: ignoringSemantics,
       child: this,
     );
   }
@@ -244,13 +242,11 @@ extension InteractionExtensions on Widget {
   Widget ignorePointer({
     Key? key,
     bool ignoring = true,
-    bool ignoringSemantics = true,
     Widget? child,
   }) {
     return IgnorePointer(
       key: key,
       ignoring: ignoring,
-      ignoringSemantics: ignoringSemantics,
       child: child ?? this,
     );
   }

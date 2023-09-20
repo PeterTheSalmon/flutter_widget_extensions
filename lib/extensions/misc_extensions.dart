@@ -29,4 +29,31 @@ extension MiscellaneousExtensions on Widget {
       builder: (_, __) => this,
     );
   }
+
+  /// Adds a key to a widget.
+  Widget keyBuilder({
+    required Key key,
+  }) {
+    return KeyedSubtree(
+      key: key,
+      child: this,
+    );
+  }
+
+  /// Wraps descendant widgets with a [Form] widget.
+  Widget form({
+    required GlobalKey<FormState> formKey,
+    Widget? child,
+    AutovalidateMode? autoValidateMode,
+    VoidCallback? onChanged,
+    WillPopCallback? onWillPop,
+  }) {
+    return Form(
+      key: formKey,
+      autovalidateMode: autoValidateMode,
+      onChanged: onChanged,
+      onWillPop: onWillPop,
+      child: this,
+    );
+  }
 }

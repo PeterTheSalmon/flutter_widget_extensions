@@ -59,28 +59,15 @@ extension ScrollingExtensions on Widget {
     bool? interactive,
     ScrollbarOrientation? scrollbarOrientation,
     @Deprecated(
-      'Use thumbVisibility instead. '
-      'This feature was deprecated after v2.9.0-1.0.pre.',
-    )
-    bool? isAlwaysShown,
-    @Deprecated(
       '''Use ScrollbarThemeData.trackVisibility to resolve based on the current state instead. '''
       'This feature was deprecated after v3.4.0-19.0.pre.',
     )
     bool? showTrackOnHover,
-    @Deprecated(
-      '''Use ScrollbarThemeData.thickness to resolve based on the current state instead. '''
-      'This feature was deprecated after v2.9.0-1.0.pre.',
-    )
-    double? hoverThickness,
   }) {
     return Scrollbar(
       key: key,
       controller: controller,
       // ignore: deprecated_member_use
-      isAlwaysShown: isAlwaysShown,
-      // ignore: deprecated_member_use
-      hoverThickness: hoverThickness,
       thickness: thickness,
       radius: radius,
       notificationPredicate: notificationPredicate,
