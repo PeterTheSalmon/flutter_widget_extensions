@@ -1,6 +1,6 @@
 name: flutter_widget_extension_methods
 description: SwiftUI-style methods to make widget styling easier and more readable.
-version: 0.0.4
+version: 1.0.0
 repository: https://github.com/PeterTheSalmon/flutter_widget_extensions
 
 platforms:

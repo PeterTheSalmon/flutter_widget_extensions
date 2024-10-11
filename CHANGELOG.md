@@ -1,3 +1,6 @@
+# 1.0.0
+- Remove deprecated members + add new ones
+
 # 0.0.4
 
 - Remove deprecated members

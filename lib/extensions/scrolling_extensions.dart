@@ -67,12 +67,9 @@ extension ScrollingExtensions on Widget {
     return Scrollbar(
       key: key,
       controller: controller,
-      // ignore: deprecated_member_use
       thickness: thickness,
       radius: radius,
       notificationPredicate: notificationPredicate,
-      // ignore: deprecated_member_use
-      showTrackOnHover: showTrackOnHover,
       interactive: interactive,
       scrollbarOrientation: scrollbarOrientation,
       thumbVisibility: thumbVisibility,

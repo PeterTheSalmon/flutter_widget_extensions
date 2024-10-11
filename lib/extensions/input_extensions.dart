@@ -9,14 +9,14 @@ extension InputExtensions on Widget {
     Key? key,
     bool autofocus = false,
     bool includeSemantics = true,
-    ValueChanged<RawKeyEvent>? onKey,
+    ValueChanged<KeyEvent>? onKeyEvent,
   }) {
-    return RawKeyboardListener(
+    return KeyboardListener(
       key: key,
       focusNode: focusNode,
       autofocus: autofocus,
       includeSemantics: includeSemantics,
-      onKey: onKey,
+      onKeyEvent: onKeyEvent,
       child: this,
     );
   }

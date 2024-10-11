@@ -46,13 +46,13 @@ extension MiscellaneousExtensions on Widget {
     Widget? child,
     AutovalidateMode? autoValidateMode,
     VoidCallback? onChanged,
-    WillPopCallback? onWillPop,
+    void Function(bool, Object?)? onPopInvokedWithResult,
   }) {
     return Form(
       key: formKey,
       autovalidateMode: autoValidateMode,
       onChanged: onChanged,
-      onWillPop: onWillPop,
+      onPopInvokedWithResult: onPopInvokedWithResult,
       child: this,
     );
   }

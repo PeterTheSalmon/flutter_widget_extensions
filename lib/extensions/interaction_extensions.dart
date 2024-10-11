@@ -277,8 +277,6 @@ extension InteractionExtensions on Widget {
     return InteractiveViewer(
       key: key,
       clipBehavior: clipBehavior,
-      // ignore: deprecated_member_use
-      alignPanAxis: alignPanAxis,
       panAxis: panAxis,
       boundaryMargin: boundaryMargin,
       constrained: constrained,
