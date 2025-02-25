@@ -1,3 +1,6 @@
+# 1.0.1
+- Update InkWell extension to fix null error
+
 # 1.0.0
 - Remove deprecated members + add new ones
 
